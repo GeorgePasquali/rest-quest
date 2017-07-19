@@ -1,0 +1,27 @@
+{
+  "name": "rest-quest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgePasquali/rest-quest.git"
+  },
+  "keywords": [
+    "rest",
+    "quest",
+    "restful",
+    "amd",
+    "module",
+    "modular"
+  ],
+  "author": "George Pasquali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeorgePasquali/rest-quest/issues"
+  },
+  "homepage": "https://github.com/GeorgePasquali/rest-quest#readme"
+}
