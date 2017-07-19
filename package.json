@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --watch --inline"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,16 @@
   "bugs": {
     "url": "https://github.com/GeorgePasquali/rest-quest/issues"
   },
-  "homepage": "https://github.com/GeorgePasquali/rest-quest#readme"
+  "homepage": "https://github.com/GeorgePasquali/rest-quest#readme",
+  "dependencies": {
+    "rxjs": "^5.4.2"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^2.29.0",
+    "ts-loader": "^2.3.0",
+    "typescript": "^2.4.1",
+    "typings": "^2.1.1",
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "^2.5.1"
+  }
 }
