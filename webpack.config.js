@@ -2,12 +2,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
-
     app: './app/main.ts'
   },
+  target: 'web', //can be node or electron etc.
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: "app.js"
+    filename: "[name].js",
+    publicPath: '/'
   },
   devtool: 'source-map',
   devServer: {
@@ -20,7 +21,7 @@ module.exports = {
     ],
   module: {
     loaders: [{
-      test: /.tsx$/,
+      test: /.tsx?$/,
       loader: "ts-loader",
       exclude: /node-modules/
     }]

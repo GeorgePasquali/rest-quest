@@ -1,20 +1,13 @@
-import {Observable} from 'rxjs';
 
-let numbers = [1, 5, 10];
-let source = Observable.from(numbers);
-
-
-class myObserver {
-  next(value){
-    console.log(`value: ${value}`);
-  }
-  error(e){
-    console.log(`error: ${e}`);
-  }
-  complete(){
-    console.log(`complete`);
-  }
+interface System {
+  import<T> (request: string): Promise<T>
 }
+declare var System: System;
 
+console.log("aaaaaaaaa");
+document.getElementsByTagName("body")[0].addEventListener("click", function(){
+  System.import('./feature/feature').then((a) => {
+    console.log(a);
+  });
+});
 
-source.subscribe(new myObserver());
